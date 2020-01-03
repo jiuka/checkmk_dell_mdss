@@ -1,0 +1,24 @@
+name: Build Checkmk package
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - uses: jiuka/checkmk-extension-builder@v1
+    - name: Upload artifact
+      id: cmkpkg
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        # Artifact name
+        name: dell_mdss-1.0.mkp
+        # Directory containing files to upload
+        path: dell_mdss-1.0.mkp
+        
+    - name: Upload artifact
+      uses: actions/upload-artifact@v1.0.0
+      with:
+        name: ${{ steps.cmkpkg.outputs.pkg-name }}
