@@ -1,0 +1,19 @@
+{
+    'author': u'Marius Rieder',
+    'description': u'This package contains a check plugin dor the Dell MD Storage Server',
+    'download_url': 'https://github.com/jiuka/checkmk_extensions/releases',
+    'files': {
+        'agents': [],
+        'checkman': ['dell_mdss'],
+        'checks': ['dell_mdss'],
+        'doc': [],
+        'inventory': [],
+        'notifications': [],
+        'pnp-templates': [],
+        'web': []},
+    'name': 'dell_mdss',
+    'title': u'Check for the Dell MD Storage Server',
+    'version': '1.0',
+    'version.min_required': '1.6.0',
+    'version.packaged': '1.6.0p7'
+}
