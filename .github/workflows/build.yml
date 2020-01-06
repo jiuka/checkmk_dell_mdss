@@ -1,6 +1,9 @@
 name: Build Checkmk package
 
-on: [push]
+on:
+  push:
+    tags-ignore:
+    - 'v*'
 
 jobs:
   build:
@@ -11,7 +14,7 @@ jobs:
 
     - uses: jiuka/build-checkmk-extension@v1
       id: cmkpkg
-        
+
     - name: Upload artifact
       uses: actions/upload-artifact@v1.0.0
       with:

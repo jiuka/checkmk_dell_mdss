@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v1
-        
+
       - name: Build the Package
         uses: jiuka/build-checkmk-extension@v1
         id: cmkpkg
@@ -28,13 +28,13 @@ jobs:
           release_name: Release ${{ github.ref }}
           draft: false
           prerelease: false
-      
+
       - name: Upload Release Asset
         uses: actions/upload-release-asset@v1.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./ ${{ steps.cmkpkg.outputs.pkgfile }}
+          asset_path: ./${{ steps.cmkpkg.outputs.pkgfile }}
           asset_name:  ${{ steps.cmkpkg.outputs.pkgfile }}
           asset_content_type: application/octet-stream
