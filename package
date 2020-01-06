@@ -1,7 +1,7 @@
 {
-    'author': u'Marius Rieder',
+    'author': u'Marius Rieder <marius.rieder@scs.ch>',
     'description': u'This package contains a check plugin dor the Dell MD Storage Server',
-    'download_url': 'https://github.com/jiuka/checkmk_extensions/releases',
+    'download_url': 'https://github.com/jiuka/checkmk_dell_mdss/releases',
     'files': {
         'agents': [],
         'checkman': ['dell_mdss'],
