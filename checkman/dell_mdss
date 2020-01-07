@@ -1,7 +1,7 @@
 title: Dell MD Storage Server
 agents: snmp
 license: GPL
-distribution: https://github.com/jiuka/checkmk_extensions
+distribution: https://github.com/jiuka/checkmk_dell_mdss
 description:
  This check monitors the Dell MD Storage Server Needs Attention flag by SNMP.
 
