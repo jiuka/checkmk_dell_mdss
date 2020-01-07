@@ -1,4 +1,4 @@
-name: Build Checkmk package
+name: build
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
 
 jobs:
   build:
+    name: Build Checkmk package
     runs-on: ubuntu-latest
 
     steps:
