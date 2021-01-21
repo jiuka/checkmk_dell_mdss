@@ -4,6 +4,11 @@
 
 This check monitors the Dell MD Storage Server Needs Attention flag by SNMP.
 
+Is known to work with:
+
+ * MD34xx
+ * MD3860
+
 # Example Output
 ## OK
 ```
